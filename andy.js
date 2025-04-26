@@ -13,14 +13,13 @@ async function handleCommand(sock, msg, text) {
                 text: '*Andy Bot Respon* \n\n`MENU`\n1. !ping\n2. !script\n\n\n `RESPON`.\n- p/ndi/halo\n> reply:Kenapa',
                 });
                 break;
-            
         
-        case '!owner':
-            await sock.sendMessage(jid, { text: 'Owner: 628xxxx' });
+        case '!script':
+            await sock.sendMessage(jid, { text: 'https://github.com/AndxyzSadBoy/Andxyz-Bot\n\nTuh script nya download aja' });
             break;
         
-        case '!donasi':
-            await sock.sendMessage(jid, { text: 'Donasi via Dana: 08xxxxxxx' });
+        case 'Bot':
+            await sock.sendMessage(jid, { text: 'online✅' });
             break;
             
             
@@ -29,10 +28,7 @@ async function handleCommand(sock, msg, text) {
             case 'ndii':
             case 'Ndi':
             case 'Ndii':
-                await sock.sendMessage(jid, { 
-                    text: `Kenapa @${jid.split('@')[0]}?`, 
-                    mentions: [jid] 
-                });
+                await sock.sendMessage(jid, { text: 'kenapa' });
                 break;                
                        
 
